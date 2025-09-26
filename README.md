@@ -20,11 +20,3 @@ This project implements **MergeSort**, **QuickSort**, **Deterministic Select**, 
 
 * Branches for each algorithm (e.g., `feature/mergesort`, `feature/quicksort`).
 * Clear commit history for incremental development.
-
-## License
-
-MIT License.
-
----
-
-This is a super-short version, highlighting the core aspects of your project.
