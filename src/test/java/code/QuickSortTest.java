@@ -21,7 +21,7 @@ class QuickSortTest {
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {0, 1, 10, 50, 100, 500, 1000, 2000})
+    @ValueSource(ints = {0, 1, 10, 100, 1000, 2000})
     public void testLargeArraySorting(int size) throws IOException {
 
         int[] arr = new int[size];

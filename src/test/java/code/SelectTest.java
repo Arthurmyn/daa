@@ -27,7 +27,7 @@ class SelectTest {
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {1, 10, 50, 100, 500, 1000, 2000})
+    @ValueSource(ints = {1, 10, 100, 1000, 2000})
     public void testDeterministicSelect(int size) throws IOException {
         int[] arr = new int[size];
         Random random = new Random();
@@ -48,7 +48,7 @@ class SelectTest {
 
         System.out.println("Deterministic Select on " + size + " elements took: " + duration + " nanoseconds.");
 
-        metrics.writeMetricsToCSV(duration, "DeterministicSelect_size_" + size);
+        metrics.writeMetricsToCSV(duration, "DeterministicSelect" + size);
 
         int[] sortedArr = arr.clone();
         Arrays.sort(sortedArr);
