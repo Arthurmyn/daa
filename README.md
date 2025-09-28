@@ -83,11 +83,11 @@ The graphs show how the execution time and the depth of recursion vary depending
 
 - **Time vs n**
 
-![Deterministic Select Time vs n](img/Deterministic Select1.png)
+![Deterministic Select Time vs n](img/DeterministicSelect1.png)
 
 - **Recursion Depth vs n**
 
-![Deterministic Select Recursion Depth vs n](img/Deterministic Select2.png)
+![Deterministic Select Recursion Depth vs n](img/DeterministicSelect2.png)
 
 ---
 
