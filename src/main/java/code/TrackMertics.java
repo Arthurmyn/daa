@@ -35,7 +35,7 @@ public class TrackMertics {
     }
 
     public void writeMetricsToCSV(long timeTaken, String algorithmName) throws IOException {
-        try (FileWriter fileWriter = new FileWriter("target/metrics.csv", true);
+        try (FileWriter fileWriter = new FileWriter("target/trackmetrics.csv", true);
              PrintWriter printWriter = new PrintWriter(fileWriter)) {
 
             printWriter.printf("%s, %d, %d, %d, %d\n",
