@@ -10,11 +10,10 @@ import java.util.Random;
 import static org.junit.jupiter.api.Assertions.*;
 
 class QuickSortTest {
-    private static final String METRICS_FILE_NAME = "target/trackmetrics.csv";
     @BeforeAll
     static void clearMetricsFile() {
         try {
-            boolean deleted = Files.deleteIfExists(Paths.get(METRICS_FILE_NAME));
+            boolean deleted = Files.deleteIfExists(Paths.get("target/trackmetrics.csv"));
         } catch (IOException e) {
             System.err.println("Error while trying to delete metrics file: " + e.getMessage());
         }

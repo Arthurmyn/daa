@@ -10,14 +10,12 @@ import java.util.Random;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ClosestTest {
-
-    private static final String METRICS_FILE_NAME = "target/trackmetrics.csv";
     private static final Random RANDOM = new Random();
 
     @BeforeAll
     static void clearMetricsFile() {
         try {
-            Files.deleteIfExists(Paths.get(METRICS_FILE_NAME));
+            Files.deleteIfExists(Paths.get("target/trackmetrics.csv"));
         } catch (IOException e) {
             System.err.println("Error while trying to delete metrics file: " + e.getMessage());
         }
